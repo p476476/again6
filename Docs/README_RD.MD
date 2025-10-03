@@ -1,11 +1,20 @@
 # Again System 開發教學 For RD
 
+
 ## 安裝
+### 由Package安裝
+- 下載`AgainSystem.unitypackage`，將檔案匯入Unity
+
+### 由SubModule安裝
+- 把`git@github.com:p476476/again2022.git`透過SubModule的方式加入專案
+  - 建議路徑為`Assets/Plugins/Again`
+- 下載[Dotween](https://drive.google.com/file/d/1IKD-B7grZYh1NcZPfFligtO8_wuUGrRk/view?usp=drive_link)，將檔案匯入Unity
+
+## 初始設定
 - 到PackageManager安裝[InputSystem](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Installation.html)套件，裝完會跳出彈窗問要不要切到新的InputSystem，選是並自動重開Unity
 - 安裝[Unity Spine](https://zh.esotericsoftware.com/spine-unity-installation#%E4%BD%BF%E7%94%A8Unitypackage%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C%E6%97%B6)
-- 下載`AgainSystem.unitypackage`，將檔案匯入Unity
-- 設定DOTewwn
-  - Unity上方 Tools > Demigiant > DOTewwn Utility Panel開啟
+- 設定DOTween
+  - Unity上方 Tools > Demigiant > DOTween Utility Panel開啟
   - 確認額外的模組有勾選
   - ![image](./Images/dotween_panel_1.png)
   - ![image](./Images/dotween_panel_2.png)
