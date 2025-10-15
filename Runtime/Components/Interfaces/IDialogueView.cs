@@ -12,6 +12,7 @@ namespace Again.Runtime.Components.Interfaces
         void SetCharacterAndText(string getCharacterString, string getTextString);
         void ScaleText(float commandScale);
         void QuickComplete();
+        bool TryAdvance();
 
         void Shake(bool isSkip, float commandDuration, float commandStrength, int commandVibrato,
             float commandRandomness,

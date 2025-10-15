@@ -55,6 +55,11 @@ namespace Again.Runtime.Components.Managers
             _dialogueView.QuickComplete();
         }
 
+        public bool TryAdvanceDialogue()
+        {
+            return _dialogueView.TryAdvance();
+        }
+
         public void ShowDialogue(SayCommand command, Action onComplete = null)
         {
             var callback = new Action(() => { onComplete?.Invoke(); });

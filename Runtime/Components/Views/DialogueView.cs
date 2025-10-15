@@ -278,5 +278,23 @@ namespace Again.Runtime.Components.Views
             _textSpeedScale = 1;
             AgainSystem.Instance.SetAutoNext(false);
         }
+
+        public bool TryAdvance()
+        {
+            if (_textAnimationState == TextAnimationState.Playing)
+            {
+                _textAnim.Complete();
+                return true;
+            }
+
+            if (_textAnimationState == TextAnimationState.Complete)
+            {
+                _textAnimationState = TextAnimationState.Wait;
+                _onComplete?.Invoke();
+                return true;
+            }
+
+            return false;
+        }
     }
 }
